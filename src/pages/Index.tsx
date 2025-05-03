@@ -5,6 +5,7 @@ import AboutSection from '@/components/AboutSection';
 import WhyAISection from '@/components/WhyAISection';
 import ImpactSection from '@/components/ImpactSection';
 import SolutionsSection from '@/components/SolutionsSection';
+import DemystifyingAISection from '@/components/DemystifyingAISection';
 import InvestmentSection from '@/components/InvestmentSection';
 import CTASection from '@/components/CTASection';
 import Footer from '@/components/Footer';
@@ -19,6 +20,7 @@ const Index: React.FC = () => {
         <WhyAISection />
         <ImpactSection />
         <SolutionsSection />
+        <DemystifyingAISection />
         <InvestmentSection />
         <CTASection />
       </main>
