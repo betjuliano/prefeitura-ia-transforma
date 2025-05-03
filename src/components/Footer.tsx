@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Mail, Github, Linkedin } from 'lucide-react';
+import { Mail, Github, Linkedin, Phone, MapPin } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -39,9 +39,18 @@ const Footer: React.FC = () => {
           
           <div className="text-right">
             <h3 className="text-xl font-bold mb-4">Contato</h3>
-            <p className="mb-2">contato@iaprojetos.com.br</p>
-            <p className="mb-2">+55 (XX) XXXX-XXXX</p>
-            <p className="mb-6">São Paulo, SP - Brasil</p>
+            <p className="mb-2 flex items-center justify-end gap-2">
+              <Mail className="h-4 w-4" />
+              contato@iaprojetos.com.br
+            </p>
+            <p className="mb-2 flex items-center justify-end gap-2">
+              <Phone className="h-4 w-4" />
+              +55 (55) 9 9963-1365
+            </p>
+            <p className="mb-6 flex items-center justify-end gap-2">
+              <MapPin className="h-4 w-4" />
+              Santa Maria, RS - Brasil
+            </p>
             
             <p className="text-sm opacity-75">© {currentYear} IA Projetos - Todos os direitos reservados</p>
           </div>
