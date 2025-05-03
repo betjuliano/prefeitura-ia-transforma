@@ -11,12 +11,12 @@ const Footer: React.FC = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
-            <img 
-              src="https://www.ufsm.br/app/uploads/sites/416/2018/09/marca-ufsm.png" 
-              alt="UFSM Logo" 
-              className="h-16 mb-6 invert"
-            />
-            <p className="text-lg opacity-90 max-w-md">
+            <h2 className="text-2xl font-bold mb-4">IA Projetos</h2>
+            <p className="text-lg opacity-90 max-w-md mb-4">
+              Organização formada para atender e desenvolver projetos personalizados 
+              e ajustados a todas as demandas e realidades do setor público.
+            </p>
+            <p className="text-base opacity-80 max-w-md">
               Transformando a gestão pública com soluções de Inteligência Artificial 
               para um atendimento mais ágil e eficiente ao cidadão.
             </p>
@@ -39,11 +39,11 @@ const Footer: React.FC = () => {
           
           <div className="text-right">
             <h3 className="text-xl font-bold mb-4">Contato</h3>
-            <p className="mb-2">Centro de Ciências Sociais e Humanas</p>
-            <p className="mb-2">Departamento de Ciências Administrativas</p>
-            <p className="mb-6">Universidade Federal de Santa Maria</p>
+            <p className="mb-2">contato@iaprojetos.com.br</p>
+            <p className="mb-2">+55 (XX) XXXX-XXXX</p>
+            <p className="mb-6">São Paulo, SP - Brasil</p>
             
-            <p className="text-sm opacity-75">© {currentYear} Juliano Nunes Alves</p>
+            <p className="text-sm opacity-75">© {currentYear} IA Projetos - Todos os direitos reservados</p>
           </div>
         </div>
       </div>
