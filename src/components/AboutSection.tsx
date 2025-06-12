@@ -24,9 +24,16 @@ const AboutSection: React.FC = () => {
   });
 
   const onSubmit = (values: z.infer<typeof formSchema>) => {
+    // Criar subject e body do email
+    const subject = encodeURIComponent('Mais informações sobre as IA para prefeituras');
+    const body = encodeURIComponent(`Olá, gostaria de receber mais informações sobre as soluções de IA para prefeituras.\n\nEmail: ${values.email}`);
+    
+    // Abrir cliente de email
+    window.location.href = `mailto:admjulianoo@gmail.com?subject=${subject}&body=${body}`;
+    
     toast({
-      title: "Inscrição realizada!",
-      description: "Obrigado pelo interesse! Enviaremos mais informações para seu e-mail.",
+      title: "Redirecionando para seu cliente de email",
+      description: "Você será direcionado para enviar o email com suas informações.",
     });
     form.reset();
   };

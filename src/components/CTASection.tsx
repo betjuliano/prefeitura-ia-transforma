@@ -28,9 +28,13 @@ const CTASection: React.FC = () => {
   });
 
   const onSubmit = (values: z.infer<typeof formSchema>) => {
+    // Redirecionar para WhatsApp com mensagem personalizada
+    const message = encodeURIComponent(`Olá! Gostaria de solicitar uma apresentação das soluções de IA para prefeituras.\n\nNome: ${values.name}\nTelefone: ${values.phone}`);
+    window.open(`https://wa.me/55999631365?text=${message}`, '_blank');
+    
     toast({
-      title: "Contato recebido!",
-      description: "Entraremos em contato em breve para agendar sua apresentação.",
+      title: "Redirecionando para WhatsApp",
+      description: "Você será direcionado para o WhatsApp para continuar a conversa.",
     });
     setSubmitted(true);
   };
@@ -113,7 +117,7 @@ const CTASection: React.FC = () => {
                   
                   <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
                     <Button className="bg-gov-whatsapp hover:bg-green-600 text-white" 
-                            onClick={() => window.open('https://wa.me/5555999631365', '_blank')}>
+                            onClick={() => window.open('https://wa.me/55999631365', '_blank')}>
                       <MessageSquare className="mr-2 h-5 w-5" />
                       Conversar Agora
                     </Button>
@@ -130,7 +134,7 @@ const CTASection: React.FC = () => {
                     <CheckCircle className="h-16 w-16 text-green-400" />
                   </div>
                   <h3 className="text-2xl font-bold mb-2">Solicitação enviada!</h3>
-                  <p className="mb-6">Nossa equipe entrará em contato em breve para agendar sua apresentação.</p>
+                  <p className="mb-6">Você será redirecionado para o WhatsApp para continuar a conversa.</p>
                   <Button className="bg-white text-gov-blue hover:bg-white/90"
                           onClick={() => setSubmitted(false)}>
                     Enviar outro contato
