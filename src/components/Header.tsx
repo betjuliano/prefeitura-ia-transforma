@@ -12,7 +12,7 @@ const Header: React.FC = () => {
       <ParticleBackground />
       
       {/* Efeitos de gradiente sobrepostos */}
-      <div className="absolute inset-0 bg-gradient-to-r from-gov-blue/80 to-transparent"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-gov-blue/70 to-blue-600/30"></div>
       <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
       
       {/* Elementos decorativos flutuantes */}
@@ -36,11 +36,12 @@ const Header: React.FC = () => {
               </div>
               
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-                Transforme sua
+                <span className="text-yellow-300 text-shadow-lg font-black tracking-wide">Transforme</span>{' '}
+                <span className="text-cyan-300 text-shadow-lg font-black tracking-wide">sua</span>
                 <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-cyan-300">
                   Prefeitura
                 </span>
-                com <span className="text-yellow-300">IA</span>
+                <span className="text-yellow-300 text-shadow-lg font-black tracking-wide">com</span> <span className="text-yellow-300">IA</span>
               </h1>
               
               <p className="text-xl md:text-2xl text-blue-100 max-w-2xl leading-relaxed">
@@ -86,7 +87,7 @@ const Header: React.FC = () => {
             </div>
           </div>
           
-          {/* Componente visual dinâmico */}
+          {/* Componente visual dinâmico com chat de IA */}
           <div className="relative animate-scale-in animation-delay-1000">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-3xl blur-3xl"></div>
             <div className="relative bg-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
