@@ -51,15 +51,15 @@ const Header: React.FC = () => {
             
             {/* Stats animados */}
             <div className="grid grid-cols-3 gap-6 py-8">
-              <div className="text-center animate-zoom-in animation-delay-500">
+              <div className="text-center animate-scale-in animation-delay-500">
                 <div className="text-3xl font-bold text-yellow-300">70%</div>
                 <div className="text-sm text-blue-200">Redução no Tempo</div>
               </div>
-              <div className="text-center animate-zoom-in animation-delay-1000">
+              <div className="text-center animate-scale-in animation-delay-1000">
                 <div className="text-3xl font-bold text-green-300">24/7</div>
                 <div className="text-sm text-blue-200">Atendimento</div>
               </div>
-              <div className="text-center animate-zoom-in animation-delay-1500">
+              <div className="text-center animate-scale-in animation-delay-1500">
                 <div className="text-3xl font-bold text-cyan-300">30%</div>
                 <div className="text-sm text-blue-200">Economia</div>
               </div>
@@ -86,8 +86,8 @@ const Header: React.FC = () => {
             </div>
           </div>
           
-          {/* Componente 3D */}
-          <div className="relative animate-zoom-in animation-delay-1000">
+          {/* Componente visual dinâmico */}
+          <div className="relative animate-scale-in animation-delay-1000">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-3xl blur-3xl"></div>
             <div className="relative bg-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10">
               <Hero3D />
