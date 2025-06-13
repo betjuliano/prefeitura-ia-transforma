@@ -45,7 +45,7 @@ const CTASection: React.FC = () => {
         <CardContent className="p-8 md:p-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-blue">
                 Vamos inovar sua gestão pública?
               </h2>
 
