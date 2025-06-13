@@ -61,8 +61,10 @@ const DemystifyingAISection: React.FC = () => {
             pode transformar a administração do seu município.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
-              href="#cta" 
+            <a
+              href="https://wa.me/5555999631365?text=solicito%20uma%20agenda%20para%20saber%20mais%20sobre%20Projetos%20de%20IA%20para%20minha%20Prefeitura"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-6 py-3 bg-gov-blue text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
             >
               Solicitar Apresentação
