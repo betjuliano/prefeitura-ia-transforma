@@ -71,3 +71,18 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+
+## Deploying under `/prefeituras` on www.iaprojetos.com.br
+
+When hosting the app at `https://www.iaprojetos.com.br/prefeituras`, configure
+Vite and React Router to use the subpath:
+
+1. Set `base: '/prefeituras/'` in `vite.config.ts`.
+2. Set `basename="/prefeituras"` on `BrowserRouter` in `src/App.tsx`.
+
+Then build the project and preview the result locally:
+
+```sh
+npm run build
+npm run preview
+```
