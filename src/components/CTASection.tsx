@@ -41,20 +41,20 @@ const CTASection: React.FC = () => {
 
   return (
     <section className="section py-20 px-4">
-      <Card className="bg-gradient-to-r from-gov-blue to-blue-900 text-white shadow-xl overflow-hidden rounded-2xl max-w-5xl mx-auto border-none">
+      <Card className="bg-white text-gov-blue shadow-xl hover:shadow-2xl transition-transform transform-gpu hover:-translate-y-1 overflow-hidden rounded-2xl max-w-5xl mx-auto border border-gov-blue/20">
         <CardContent className="p-8 md:p-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gov-blue">
                 Vamos inovar sua gestão pública?
               </h2>
-              
-              <p className="text-lg mb-8 text-white/90">
+
+              <p className="text-lg mb-8 text-gray-700">
                 Marque uma apresentação personalizada e descubra como a IA pode transformar
                 sua prefeitura, reduzir custos e melhorar o atendimento ao cidadão.
               </p>
               
-              <div className="space-y-4">
+              <div className="space-y-4 text-gray-700">
                 <div className="flex items-center">
                   <CheckCircle className="mr-3 h-5 w-5 text-green-400" />
                   <span>Demonstração personalizada para sua prefeitura</span>
@@ -70,7 +70,7 @@ const CTASection: React.FC = () => {
               </div>
             </div>
             
-            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
+            <div className="bg-white p-8 rounded-xl shadow-lg transform-gpu transition-transform hover:scale-105">
               {!submitted ? (
                 <>
                   <h3 className="text-xl font-bold mb-4 text-center">Solicite uma apresentação</h3>
@@ -82,10 +82,10 @@ const CTASection: React.FC = () => {
                         render={({ field }) => (
                           <FormItem>
                             <FormControl>
-                              <Input 
-                                placeholder="Seu nome" 
-                                className="h-12 bg-white/20 border-white/20 placeholder:text-white/60 text-white" 
-                                {...field} 
+                              <Input
+                                placeholder="Seu nome"
+                                className="h-12 bg-gray-100 border-gray-300 placeholder:text-gray-500"
+                                {...field}
                               />
                             </FormControl>
                           </FormItem>
@@ -97,18 +97,18 @@ const CTASection: React.FC = () => {
                         render={({ field }) => (
                           <FormItem>
                             <FormControl>
-                              <Input 
-                                placeholder="Seu telefone" 
-                                className="h-12 bg-white/20 border-white/20 placeholder:text-white/60 text-white" 
-                                {...field} 
+                              <Input
+                                placeholder="Seu telefone"
+                                className="h-12 bg-gray-100 border-gray-300 placeholder:text-gray-500"
+                                {...field}
                               />
                             </FormControl>
                           </FormItem>
                         )}
                       />
-                      <Button 
-                        type="submit" 
-                        className="w-full h-12 bg-white text-gov-blue hover:bg-white/90"
+                      <Button
+                        type="submit"
+                        className="w-full h-12 bg-gov-blue text-white hover:bg-blue-800"
                       >
                         Solicitar apresentação
                       </Button>
@@ -135,7 +135,7 @@ const CTASection: React.FC = () => {
                   </div>
                   <h3 className="text-2xl font-bold mb-2">Solicitação enviada!</h3>
                   <p className="mb-6">Você será redirecionado para o WhatsApp para continuar a conversa.</p>
-                  <Button className="bg-white text-gov-blue hover:bg-white/90"
+                  <Button className="bg-gov-blue text-white hover:bg-blue-800"
                           onClick={() => setSubmitted(false)}>
                     Enviar outro contato
                   </Button>
