@@ -87,3 +87,18 @@ Then build the project and preview the result locally:
 npm run build
 npm run preview
 ```
+
+## Deploying on Vercel
+
+For a deployment at the root URL on Vercel, use the default configuration:
+
+1. Ensure `base` in `vite.config.ts` is set to `/`.
+2. Remove any `basename` prop from `BrowserRouter` in `src/App.tsx`.
+
+Then, run a production build:
+
+```sh
+npm run build
+```
+
+Vercel will automatically serve the built files from the `dist` directory.
